@@ -1,0 +1,120 @@
+body {
+    left: 0px;
+    top: 20px;
+    background: #9C835F;
+}
+.back-button {
+    font-size: 72px;
+    color: #724C21;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+.navbar-brand {
+    margin-right: 58%;
+}
+.game-name {
+    color: #F9B23D;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    padding-left: 20px;
+}
+
+.choices {
+    display: grid;
+    justify-content: center;
+}
+
+.choice-sign img {
+    height: 92px;
+    width: 128px;
+
+}
+
+.choices button {
+    background: none;
+    border: none;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.choices button:hover {
+    /* transform: scale(1.5);
+    transform: rotate(20deg); */
+    /* background-color: ; */
+    height: 92px;
+    width: 128px;
+}
+
+.container {
+    justify-content: center;
+    padding-top: 30px;
+}
+.player > h2{
+    padding-left: 210px;
+}
+.versus {
+    align-self: center; 
+}
+
+#versusBox h2{
+    font-size: 144px;
+    color: red;
+}
+
+.com > h2{
+    padding-left: 245px;
+}
+
+/* pseudo item for win or draw info */
+.win-box {
+    height: 166px;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    background: #4C9654;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 5px;
+    transform: rotate(-30deg);
+}
+
+.draw-box {
+    height: 166px;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    background: #4C9654;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 5px;
+    transform: rotate(-30deg);
+}
+
+#refresh img {
+    height: 10vh;
+}
+
+.refresh-area button {
+    background: none;
+    border: none;
+    transition: all 0.4s ease-in-out 0s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.refresh-area button:hover {
+    transform: scale(1.5);
+    transform: rotate(40deg);
+}
+
+
+/* pseudo item for selection - undone */
+/* .selection-option {
+    background-color: #C4C4C4;
+    width: 128px;
+    height: 92px;
+} */

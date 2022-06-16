@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+/* PAGE 1 */
+.banner{
+    width: 100%;
+    height:  100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0)
+    ,rgba(0, 0, 0, 0.849)),url(/images/main-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--gap);
+    background: rgba(0, 0, 0, 0.63);
+    color: #fff;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner > header > .navbar > .judul {
+    color: white;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1 {
+    position: absolute;
+    height: 73.12px;
+    left: 9.22%;
+    right: 10.47%;
+    top: calc(50% - 73.12px/2 - 130.06px);
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.content p {
+    margin: 20px auto;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;    
+    line-height: 28px;
+    /* identical to box height */
+
+    letter-spacing: 2px;
+
+    color: #FFFFFF;
+}
+.button{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10 px;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.container h3{
+    position: absolute;
+    left: 47.66%;
+    right: 47.61%;
+    top: 91.03%;
+    bottom: 100%;
+    
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container svg {
+    padding-left: 480px;
+    padding-top: 580px;
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    top: 2vw;
+    left: 33%;
+    width: 500px;
+    height: 230px;
+}
+
+.card > form {
+    width: 90%
+}
+
+form > a > button.back {
+    display: inline-block;
+    border: 1px solid gray;
+    width: 65px;
+}
+
+/* PAGE 2 */
+.bannerSecond {
+    width: 100%;
+    height:  100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(136.03% 54.57% at 50% 48.04%, 
+    rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 60.63%, #080A0B 99.74%)
+    ,url(/images/the-games-bg.jpg);
+    background-size: cover;
+}
+
+.bannerSecond > .gallery-container {
+    display: grid;
+    grid-template-columns: 500px 30px 650px 30px;
+    grid-template-rows: 39px 400px;
+}
+#item-1 {
+    color: #fff;
+    padding-left: 145px;
+    font-size: 24px;
+    font-weight: normal;
+}
+#item-2 {    
+    color: #fff;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 56px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.panahKiri {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    align-self: center;
+    padding-top: 100px;
+    cursor: pointer;
+}
+#image-container {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content: center;
+}
+#image-container img {
+    max-width: 100%;
+    height: 100%;
+}
+.panahKanan {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    align-self: center;
+    padding-top: 100px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+/* PAGE 3 */
+.bannerThird {
+    width: 100%;
+    height:  100vh;
+    background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, 
+    rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, 
+    rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%)
+    ,url(/images/features.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerThird > .judul {
+    color: white;
+    margin-left: 850px;
+    padding-top: 80px;
+}
+.bannerThird > .judul > h4 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.bannerThird > .judul > h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.bannerThird > .judulPertama {
+    margin-left: 850px;
+    padding-top: 50px;
+    height: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.bannerThird > .judulPertama > h2 {
+    margin-top: -30px;
+    padding-left: 30px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.bannerThird > .judulPertama > p {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.bannerThird > .judulKetiga{
+    margin-left: 850px;
+    margin-top: -268px;
+}
+.bannerThird > .judulKetiga > h2{
+    margin-top: -35px;
+    padding-left: 30px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.bannerThird > .judulKeempat {
+    margin-left: 850px;
+    margin-top: 55px;
+}
+.bannerThird > .judulKeempat > h2{
+    margin-top: -35px;
+    padding-left: 30px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.line {
+    margin-top: -250px;
+    margin-left: 863px;
+}
+
+/* PAGE 4 */
+.bannerFourth {
+    width: 100%;
+    height:  100vh;
+    background: radial-gradient(33.26% 45% at 64.32% 47.1%, 
+    rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, 
+    #000000a1 99.74%)
+    ,url(/images/requirements.png);
+    background-size: cover;
+    background-position: center;
+}
+.bannerFourth > p {
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    color: #FFFFFF;
+}
+.systemReq-judul {
+    padding-left: 100px;
+    padding-top: 80px;
+}
+.systemReq-judul > h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.table-req {
+    /*width: 40%;*/
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.table-req > .req-os {
+    color: white;
+    border: 1px solid rgb(105, 105, 105);
+    width: 21%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.table-req > .req-os > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.table-req > .req-os > p {
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    color: #FFFFFF;
+}
+.table-req > .req-processor {
+    color: white;
+    margin-top: -94px;
+    padding-left: 300px;
+    width: 20%;
+    border: 1px solid rgb(105, 105, 105);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.table-req > .req-processor > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.table-req > .req-processor > p {
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    color: #FFFFFF;
+}
+.table-req > .memory {
+    color: white;
+    border: 1px solid rgb(105, 105, 105);
+    width: 21%;
+    margin-top: -1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.table-req > .memory > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.table-req > .memory > p {
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    color: #FFFFFF;
+}
+.table-req > .storage {
+    color: white;
+    margin-top: -72px;
+    padding-left: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 20%;
+    border: 1px solid rgb(105, 105, 105);
+}
+.table-req > .storage > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.table-req > .storage > p {
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    color: #FFFFFF;
+}
+.table-req > .graphics {
+    color: white;
+    border: 1px solid rgb(105, 105, 105);
+    width: 558px;
+    margin-top: -1px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.table-req > .graphics > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;   
+}
+.table-req > .graphics > p {
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    color: #FFFFFF;
+}
+
+/* PAGE 5 */
+.bannerFifth {
+    width: 100%;
+    height:  100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: radial-gradient(70.52% 37.27% at 24.21% 47.47%, 
+    rgba(35, 15, 15, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%)
+    ,url(/images/the-games-bg.jpg);
+    background-size: cover;
+}
+.bannerFifth > .top-score {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+}
+.bannerFifth > .top-score > h2 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 56px;
+    line-height: 28px;
+    padding-left: 130px;
+    padding-top: 80px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.bannerFifth > .top-score > p {
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 40px;
+    padding-left: 130px;
+    /* or 122% */
+    color: #FFFFFF;
+}
+.bannerFifth > .top-score > tombol {
+    padding-top: 50px;
+    padding-left: 130px;
+}
+.bannerFifth > .Evan {
+    margin-right: -700px;
+    margin-top: -400px;
+    width: 35%;
+    height: 25%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(184, 184, 184, 0.178);
+}
+.bannerFifth > .Evan > h2 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;
+    margin-top: -95px;
+    padding-left: 120px;
+}
+.bannerFifth > .Evan > h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-left: 120px;
+}
+.bannerFifth > .Evan > p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+.bannerFifth > .Evan > h5 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.bannerFifth > .Jada {
+    margin-right: 50px;
+    margin-top: 80px;
+    width: 35%;
+    height: 30%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(184, 184, 184, 0.178);
+}
+.bannerFifth > .Jada > h2 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height */
+    letter-spacing: 2px;
+    color: #FFB548;
+    margin-top: -95px;
+    padding-left: 120px;
+}
+.bannerFifth > .Jada > h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-left: 120px;
+}
+.bannerFifth > .Jada > p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+.bannerFifth > .Jada > h5 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+/* PAGE 6 */
+.bannerSixth {
+    width: 100%;
+    height:  100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0)
+    ,rgba(0, 0, 0, 0.849)),url(/images/features.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bannerSixth > .newsContainer {
+    width: 50%;
+    height: 70%;
+    padding-top: 10px;
+    padding-left: 50%;
+}
+.bannerSixth > .newsContainer > .sub-head {
+    color: rgb(255, 255, 255);
+}
+.bannerSixth > .newsContainer > .sub-head > h3 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    padding-top: 10%;
+}
+.bannerSixth > .newsContainer > .sub-head > h1 {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 65px;
+    line-height: 75px;
+    letter-spacing: 3px;
+    padding-top: 25px;
+    color: #FFFFFF;
+}
+.bannerSixth > .newsContainer > .sub-head > p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 25px;
+    color: #FFFFFF;
+}
+.bannerSixth > .newsContainer > .kotak {
+    padding-top: 25px;
+}
+.bannerSixth > .newsContainer > .kotak > .email {
+    width: 366px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.178);
+    border: 1px solid rgba(255, 255, 255, 0.178) ;
+}
+.bannerSixth > .newsContainer > .kotak > .email > h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 17px;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 4px;
+}
+.bannerSixth > .newsContainer > .kotak > .email > p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 17px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFB548;
+}
+.bannerSixth > .newsContainer > button {
+    margin-top: -59px;
+    padding-left: 300px;
+}
